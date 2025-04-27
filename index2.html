@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что влияет на автономность телефона?</title>
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PT Serif', Georgia, serif;
+            color: #222;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Шапка */
+        .header {
+            margin: 40px 0 50px;
+            text-align: center;
+        }
+        
+        .header__category {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 14px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        
+        .header__title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        
+        .header__lead {
+            font-size: 20px;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .header__meta {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header__meta-item {
+            margin: 0 10px;
+        }
+        
+        .header__meta-separator {
+            width: 3px;
+            height: 3px;
+            background: #ddd;
+            border-radius: 50%;
+        }
+        
+        /* Основное содержание */
+        .content {
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+        
+        .content p {
+            margin-bottom: 25px;
+        }
+        
+        .content h2 {
+            font-size: 28px;
+            margin: 50px 0 25px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .content h3 {
+            font-size: 22px;
+            margin: 40px 0 20px;
+            font-weight: 700;
+        }
+        
+        /* Блоки с цитатами */
+        .quote {
+            border-left: 3px solid #e0e0e0;
+            padding-left: 20px;
+            margin: 30px 0;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .quote__author {
+            font-style: normal;
+            font-weight: 700;
+            margin-top: 10px;
+            color: #333;
+        }
+        
+        /* Выделенные факты */
+        .fact {
+            background: #f5f5f5;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 3px;
+        }
+        
+        .fact__title {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        /* Изображения */
+        .image {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        
+        .image__caption {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        
+        /* Таймлайн */
+        .timeline {
+            margin: 40px 0;
+        }
+        
+        .timeline__item {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .timeline__year {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #888;
+            min-width: 80px;
+            padding-right: 20px;
+        }
+        
+        .timeline__content {
+            flex: 1;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* Подпись */
+        .footer {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+            margin: 60px 0 40px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .header__title {
+                font-size: 28px;
+            }
+            
+            .header__lead {
+                font-size: 18px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .content h2 {
+                font-size: 24px;
+            }
+            
+            .content h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__category">Технологии</div>
+            <h1 class="header__title">Что влияет на автономность телефона?</h1>
+            <p class="header__lead">От каких факторов зависит автономность телефона</p>
+            <div class="header__meta">
+                <div class="header__meta-item">Автор:какой-то чел</div>
+                <div class="header__meta-separator"></div>
+                <div class="header__meta-item">20 апреля 2025</div>
+                <div class="header__meta-separator"></div>
+                <div class="header__meta-item">Обновлено сегодня</div>
+            </div>
+        </header>
+        
+        <div class="content">
+            <p>Каждый из нас видел рекламу телефонов где написанно много миллиампер и говориться что у него большая батарея но так ли это</p>
+            
+            <div class="image">
+                <img src="https://itzine.ru/wp-content/uploads/2025/04/honorpower-1743668910402.jpg" alt="Процесс деградации батареи смартфона">
+                <div class="image__caption">хонор представили телефон с 8000 милиампер</div>
+            </div>
+            
+            <h2>Сравнение автономности современных флагманов</h2>
+            
+            <div class="timeline">
+                <div class="timeline__item">
+                    
+                    <div class="timeline__content">
+                        
+                      Самым автономным в линейке ожидаемо стал iPhone 16 Pro Max. С аккумулятором ёмкостью 4685 мА·ч смартфон легко работает без подзарядки два полных дня — и это при достаточно активном использовании. Аппарат в тестах выдерживает до 10 часов беспрерывного гейминга и до 22,5 часов воспроизведения видео нон стоп.
+                    </div>
+                </div>
+                
+                <div class="timeline__item">
+                    
+                    <div class="timeline__content">
+                      Автономность В OnePlus 13 установлена батарея ёмкостью 6000 мА·ч, которая обеспечивает не меньше дня полноценной работы. Это кремний-углеродный аккумулятор, который не теряет заряд при отрицательных температурах. При той же ёмкости, что и литийионные батареи, он обладает меньшими габаритами.
+                    </div>
+                </div>
+                
+                <div class="timeline__item">
+                    <div class="timeline__year">странно да?</div>
+                    <div class="timeline__content">
+                      Стандартная автономность, минимальная комплектация
+                      В Galaxy S25 Ultra аккумулятор емкостью 5000 мА·ч, в S25+ чуть меньше — 4900 мА·ч. Фактически смартфонам зарядки хватает одинаково, на целый день с небольшим запасом — как и у предыдущих поколений Galaxy S.
+                    </div>
+                </div>
+                
+                <div class="timeline__item">
+                    <div class="timeline__year">а вот так?</div>
+                    <div class="timeline__content">
+                      Google pixel 9 pro XL 4700 миллиампер Смартфон демонстрирует достойные показатели в тестах автономности: до 15,5 часов в режиме просмотра видео, до 11,5 часов веб-сёрфинга.
+                    </div>
+                </div>
+            </div>
+            
+            <h2></h2>
+            
+            <p>какие же факторы влияют на автнономность?</p>
+            
+            <div class="fact">
+                <div class="fact__title">Факт</div>
+                Oled и Amoled матрицы (современные) хоть и конрастнее и лучше lcd но они и также меньше расходуют заряд но вренды для глаз</p>
+            </div>
+            
+            <p>На автономность телефона влияют разные факторы, среди них:
+
+              Ёмкость аккумулятора. Чем она больше, тем дольше устройство может работать без подзарядки.  
+              Процессор. Чем мощнее устройство, тем больше энергии оно потребляет.  
+              Экран. На автономность влияют тип матрицы, разрешение и частота обновления экрана. Чем выше эти показатели, тем быстрее разряжается устройство.  
+              Запускаемые приложения. Игры, камера и навигация потребляют много энергии.  
+              Качество мобильной связи. При плохом сигнале нагрузка на устройство возрастает.  
+              Программное обеспечение. Большое количество предустановленных приложений, десятки фоновых процессов и насыщенная виджетами программная оболочка быстрее разряжают смартфон.
+              Сервисы, такие как Bluetooth, GPS и NFC. Постоянно включенные, они тоже разряжают батарею. </p>
+            
+            
+            
+            <h3>Мифы о автономности и зарядке</h3>
+            
+            <p>какие мифы по мнению людей ломают автономность телефона?</p>
+            
+            <h4>Миф 1: Нужно полностью разряжать телефон и разряжать после покупки </h4>
+            <p></p> Полностью разряжать телефон после покупки и потом заряжать его не нужно. 
+
+            Это связано с тем, что в современных телефонах стоят литий-ионные батареи, у которых нет эффекта памяти. Поэтому смартфон не надо заряжать и разряжать несколько раз, активируя аккумулятор. Кроме того, для такого типа батарей полные зарядка и разрядка вредны. 
+            
+            Единственное, что нужно сделать в первый раз, — зарядить смартфон полностью к 100%. Это необходимо для того, чтобы электроника синхронизировала отображаемую ёмкость аккумулятора с реальной и в дальнейшем показывала корректный остаток заряда. 
+            
+            Эксперты рекомендуют держать заряд в пределах 30–80%.
+            
+            <h4>Миф 2: большое количество ват губят аккумулятор</h4>
+            <p>в 2023 бренд Realme выпустили телефон GT NEO 5 240W (по названию можно понять) люди говорили что аккумулятор скоро сломается но Большое количество ватт не губят аккумулятор, потому что процесс зарядки происходит в несколько этапов.  
+
+              Сначала мощность постепенно возрастает, достигая пика в диапазоне 30–50%, а иногда и в пределах 70% заряда. После этого зарядное устройство (ЗУ) сбрасывает показатели до слабых значений, чтобы избежать перегрева и чрезмерного износа аккумулятора.  
+              
+              Кроме того, контроллеры современных ЗУ отслеживают температуру, состояние и другие параметры аккумулятора, не допуская превышения допустимого порога.  
+              
+              Также производители оснащают свои устройства механизмами отвода тепла, специальными чипами управления и даже делят элемент питания на две части — технических решений для оптимизации процесса множество.  
+              
+              Однако использование дешёвых блоков питания от неизвестных производителей может привести к износу аккумулятора. Также важно использовать только сертифицированные производителем аксессуары. </p>
+            
+            <div class="image">
+                <img src="https://example.com/charging-myths.jpg" alt="График оптимальной зарядки">
+                <div class="image__caption">Оптимальный диапазон зарядки для продления жизни батареи — от 20% до 80%</div>
+            </div>
+            
+            <h2>7 правил долголетия батареи</h2>
+            
+            <p>На основе исследований Battery University и рекомендаций производителей мы составили список правил, которые помогут продлить жизнь аккумулятора:</p>
+            
+            <ol>
+                <li><strong>Избегайте экстремальных температур.</strong> Идеальный диапазон — от 16°C до 22°C.</li>
+                <li><strong>Не заряжайте до 100%.</strong> Оптимально останавливать зарядку на 80-90%.</li>
+                <li><strong>Не допускайте глубокого разряда.</strong> Старайтесь заряжать телефон при 20-30%.</li>
+                <li><strong>Используйте оригинальные зарядные устройства.</strong> Дешёвые аналоги могут повредить батарею.</li>
+                <li><strong>Включайте режим оптимизированной зарядки</strong> (есть в iOS и Android).</li>
+                <li><strong>При длительном хранении оставляйте заряд на 50%.</strong></li>
+                <li><strong>Избегайте быстрой зарядки, когда она не нужна.</strong> Ночью лучше использовать медленную зарядку.</li>
+            </ol>
+            
+            <div class="fact">
+                <div class="fact__title">Эксперимент</div>
+                <p>Исследование Battery University показало, что батарея, которую постоянно заряжали от 100% до 25%, сохранила 80% ёмкости после 500 циклов. Аналогичная батарея, заряжавшаяся от 75% до 65%, сохранила 95% ёмкости после 2500 циклов.</p>
+            </div>
+            
+            <h2>Как увелечить автономность своего телефона?</h2>
+            
+            <p>что же лучше выключать для сохранения заряда? советы:</p>
+            
+            <ul>
+                <li><strong>microSD</strong> — если она у вас есть то знаете что она расходует 10% от вашего телефона</li>
+                <li><strong>2 и более сим карт</strong> — расходуют дополнительные 10-15%</li>
+                <li><strong>Always on display</strong> — полезная функция которая показывает то что тебе нужно на выключенном экране но расходует также батарею</li>
+                <li><strong>геопозиция nfc мобильная сеть и т.д</strong> — ну тут и так понятно</li>
+            </ul>
+            
+            
+        </div>
+        
+        <div class="footer">
+            Материал подготовлен на основе научных публикаций и рекомендаций производителей. Фотографии и иллюстрации используются в качестве примера.
+        </div>
+    </div>
+</body>
+</html>

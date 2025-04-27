@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(78, 87, 94);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(https://mygadget.ru/wp-content/cache/thumb/a4/032ef04a8d793a4_1024x576_notrise.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-block-end: 100px;
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(28, 207, 145);
+    backdrop-filter: blur(3px);
+    font-size: 100px;
+    font-weight: 900;
+}
+
+header div {
+    color: rgb(28, 207, 145);
+    backdrop-filter: blur(3px);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+main section {
+    color: rgb(28, 207, 145);
+    font-size: 35px;
+    text-align: center;
+    margin-block-end: 25px;
+}
